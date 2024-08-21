@@ -19,6 +19,7 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-bg': '#ABEF5F',
+                        'gray-secondary': '#737373',
                     },
                     fontFamily: {
                         manrope: ["Manrope", 'sans-serif'],
@@ -30,9 +31,9 @@
 </head>
 
 <body class="font-manrope">
-    <header class="bg-[#ffffff]">
+    <header>
 
-        <nav class="container mx-auto py-10 border-2 border-black">
+        <nav class="container mx-auto py-8">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
 
@@ -52,10 +53,10 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-base">
                         <li class="font-bold"><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li class="text-gray-secondary"><a>Services</a></li>
+                        <li class="text-gray-secondary"><a>Portfolio</a></li>
+                        <li class="text-gray-secondary"><a>Blogs</a></li>
+                        <li class="text-gray-secondary"><a>Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
@@ -98,10 +99,110 @@
         <!-- banner  -->
 
         <div>
-            
+            <div class="hero min-h-[85vh]">
+                <div class="hero-content text-center">
+                    <div class="max-w-screen-xl">
+                        <img class="mx-auto mb-5" src="./assets/banner.png" alt="">
+                        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold mb-5">A barn house of this design has a
+                            striking appearance</h1>
+                        <p class="text-base py-6 sm:px-5 md:px-10 lg:px-20 mb-5">
+                            The barn house captivates with its blend of rustic charm and modern sophistication,
+                            featuring weathered wood, sleek metal accents, and large windows that flood the space with
+                            natural light.
+                        </p>
+
+                        <!-- button  -->
+                        <button
+                            class="btn sm:btn-md max-sm:w-full font-bold text-xl bg-[#ABEF5F80] hover:bg-[#ABEF5F] rounded-full mb-10 lg:mb-24">View
+                            Details
+                            <div
+                                class="text-2xl bg-[#ABEF5F] rounded-full rotate-45 p-1 w-9 h-9 flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-up-long "></i>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
     </header>
+
+    <main class="bg-[#f4f4f4]">
+        <!-- About Us -->
+        <section class="container mx-auto py-14 lg:py-24 px-3">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative flex flex-col items-center justify-center lg:items-start gap-4 md:gap-7">
+
+                    <div class="absolute -top-20 -left-16 max-lg:hidden">
+                        <img src="./assets/Vector.png" alt="">
+                    </div>
+
+                    <!-- About button  -->
+                    <div class="flex gap-2 text-base btn btn-ghost bg-white hover:bg-gray-200 rounded-full">
+                        <i class="fa-solid fa-arrow-right-long "></i>
+                        <h2 class="font-bold">About Us</h2>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center lg:text-left">We design
+                        thoughtful, liveable spaces</h1>
+                    <p class="text-base text-center lg:text-left">The barn house captivates with its blend of rustic
+                        charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 md:gap-7 w-full">
+                        <!-- card 1 -->
+                        <div class="w-full flex bg-white gap-8 p-5 rounded-2xl ">
+                            <img class="w-16 h-16" src="./assets/commercial.png" alt="">
+                            <div>
+                                <h1 class="font-bold text-xl lg:text-2xl mb-3">Commercial</h1>
+                                <p class="text-base text-gray-secondary">The barn house captivates with its blend of
+                                    rustic charm and modern.</p>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="w-full flex bg-white gap-8 p-5  rounded-2xl ">
+                            <img class="w-16 h-16" src="./assets/residential.png" alt="">
+                            <div>
+                                <h1 class="font-bold text-xl lg:text-2xl mb-3">Residential</h1>
+                                <p class="text-base text-gray-secondary">The barn house captivates with its blend of
+                                    rustic charm and modern. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img  -->
+                <div>
+                    <img class="border-dashed border-2 w-full" src="./assets/Rectangle.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- counter section -->
+        <section class="container mx-auto bg-white rounded-2xl py-14 px-3">
+            <div>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center">235+</h2>
+                <p>Happy Client Review</p>
+            </div>
+            <div>
+                <h2>235+</h2>
+                <p>Happy Client Review</p>
+            </div>
+            <div>
+                <h2>235+</h2>
+                <p>Happy Client Review</p>
+            </div>
+            <div>
+                <h2>235+</h2>
+                <p>Happy Client Review</p>
+            </div>
+
+        </section>
+
+
+    </main>
 
 </body>
 

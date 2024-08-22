@@ -25,6 +25,9 @@
                     },
                     fontFamily: {
                         manrope: ["Manrope", 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'paper-bg': "url('./assets/bg.jpg')",
                     }
                 }
             }
@@ -221,7 +224,7 @@
                 </div>
 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center lg:text-left">Our Works Process</h1>
-                <p class="text-base text-center lg:text-left ">The barn house captivates with its blend of rustic
+                <p class="text-base text-center ">The barn house captivates with its blend of rustic
                     charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
 
@@ -278,14 +281,15 @@
 
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center lg:text-left">Read Our Articles and
                     News</h1>
-                <p class="text-base text-center lg:text-left ">The barn house captivates with its blend of rustic
+                <p class="text-base text-center  ">The barn house captivates with its blend of rustic
                     charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
 
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
                 <!-- Product Card -->
-                <div class="rounded-xl bg-white overflow-hidden p-6">
+                <div
+                    class="rounded-xl bg-white overflow-hidden grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-sm:gap-0 max-lg:gap-6 p-6">
                     <img class="mx-auto w-full border-dashed border-2" src="./assets/article1.png" alt="" />
 
                     <div class="flex flex-col gap-3 mt-3 ">
@@ -306,7 +310,8 @@
                     </div>
                 </div>
                 <!-- Product Card -->
-                <div class="rounded-xl bg-white overflow-hidden p-6">
+                <div
+                    class="rounded-xl bg-white overflow-hidden grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-sm:gap-0 max-lg:gap-6 p-6">
                     <img class="mx-auto w-full border-dashed border-2" src="./assets/article2.png" alt="" />
 
                     <div class="flex flex-col gap-3 mt-3 ">
@@ -327,7 +332,8 @@
                     </div>
                 </div>
                 <!-- Product Card -->
-                <div class="rounded-xl bg-white overflow-hidden p-6">
+                <div
+                    class="rounded-xl bg-white overflow-hidden grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-sm:gap-0 max-lg:gap-6 p-6">
                     <img class="mx-auto w-full border-dashed border-2" src="./assets/article3.png" alt="" />
 
                     <div class="flex flex-col gap-3 mt-3 ">
@@ -357,15 +363,75 @@
 
         <!-- Next Project -->
 
-        <section>
+        <section class=" bg-white p-2">
+            <div class="bg-paper-bg bg-no-repeat bg-cover bg-center">
+                <div class="container mx-auto py-14 lg:py-24 px-4">
+                    <div class="flex flex-col items-center justify-center gap-4 md:gap-7 mb-14">
+                        <!-- button  -->
+                        <div
+                            class="flex gap-2 text-base btn btn-ghost bg-[#ABEF5F33] hover:bg-[#acef5f85] rounded-full">
+                            <i class="fa-solid fa-arrow-right-long "></i>
+                            <h2 class="text-gray-one font-bold">Let’s Connect</h2>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-center lg:text-left">Let’s Discuss
+                            Next Project</h1>
+                        <p class="text-base text-center ">The barn house captivates with its blend of
+                            rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+
+
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:px-24">
+
+                        <!-- inputs  -->
+                        <input type="text" placeholder="First Name*"
+                            class="input lg:input-lg w-full font-medium rounded-full" />
+                        <input type="text" placeholder="Last Name*"
+                            class="input lg:input-lg w-full font-medium rounded-full" />
+                        <input type="text" placeholder="Phone Number*"
+                            class="input lg:input-lg w-full font-medium rounded-full" />
+                        <input type="text" placeholder="Email Number*"
+                            class="input lg:input-lg w-full font-medium rounded-full" />
+                        <textarea placeholder="Write your message here"
+                            class="textarea lg:textarea-lg w-full rounded-3xl h-40 md:h-60 font-medium sm:col-span-2"></textarea>
+
+
+
+                        <!-- button -->
+                        <button
+                            class="btn btn-md lg:btn-lg font-bold text-xl bg-primary-green hover:bg-[#99df4a] rounded-full border-none sm:col-span-2">Send
+                            Mail
+                            <div
+                                class="text-base md:text-xl bg-[#1C1C1C] text-white rounded-full rotate-45 p-1 w-6 md:w-8 h-6 md:h-8 flex items-center justify-center">
+                                <i class="fa-solid fa-arrow-up-long "></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+
+
+            </div>
 
         </section>
 
 
     </main>
 
-    <footer>
-        
+    <footer class="bg-[#1C1C1C] p-56">
+        <div class="border-white border-2">
+            <!-- logo -->
+            <div class="flex gap-1 btn btn-ghost hover:bg-transparent">
+                <!-- logo icon -->
+                <div
+                    class="text-2xl bg-primary-green rounded-full rotate-45 p-1 w-9 h-9 flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-up-long "></i>
+                </div>
+                <h2 class="font-bold text-5xl text-white">Rinterio</h2>
+            </div>s
+
+        </div>
     </footer>
 
 </body>
